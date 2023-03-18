@@ -4,93 +4,347 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. JAYA SETYA PLASTIK</title>
+    <title>JAYA SETYA PLASTIK</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/magnify/css/magnify.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Slab&family=Ubuntu&display=swap');
+    * {
+      scroll-behavior: smooth;
+      font-family: 'Assistant', sans-serif;
+    }
+    .header .banner {
+        
+        position: relative;
+        background: rgb(0, 0, 0);
+        height: 50vh;
+
+    }
+    .header .banner::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.4;
+        background: url("assets/img/image/tentang-kami/inject.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .header .banner img{
+        width: 100%;
+    }
+    .header .banner .title {
+    text-align: left;
+    color: white;
+    top: 65%!important;
+    left: 2%;
+    }
+    .header .banner .title h1 {
+    color: #f1b406;
+    text-shadow: #80817e 1px 2px;
+    font-weight: bold;
+    /* font-size: 50px; */
+    }
+    .header .banner .tittle .garis p{
+        font-size: 49px;
+        text-shadow: #80817e 1px 3px;
+    }
+    .header .banner p{
+        color: white;
+        font-size: 18px;
+    }
+    .content img{
+        width: 100%;
+    }
+    .content .title h3{
+        font-weight: bolder;
+    }
+    .kebijakan {
+        background-color: #E9F8F9;
+        padding-bottom: 1%;
+    }
+    .kebijakan ul li{
+        text-decoration: none;
+        list-style-type: none;
+        text-align: justify;
+    }
+    .kebijakan .title {
+      padding-top: 15px;
+      margin-bottom: 15px;
+    }
+    .kebijakan .content {
+      padding-left: 10%;
+    }
+    .kebijakan .content img{
+      margin-left: -3px;
+    }
+    .value {
+        padding-bottom: 1%;
+    }
+    .value .title{
+        padding-top: 15px;
+    }
+    .value h5{
+        margin-top: 15px;
+        margin-bottom: 13px;
+    }
+    .value ul li{
+        text-align: left;
+        margin-top: 2px;
+    }
+    .footer {
+      background-color: #E9F8F9;
+
+    }
+    .footer .footer-title {
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 2%;
+    }
+    .footer .footer-title img{
+      width: 70px;
+    }
+    .footer .footer-address{
+      font-style: italic;
+    }
+    .footer .footer-title h3{
+      font-weight: bolder;
+      padding-left: 2%;
+      text-shadow: #fff 1px 1px;
+
+    }
+    .footer .footer-sosmed ul{
+      display: flex;
+      margin-left: -35px;
+    }
+    .footer .footer-sosmed ul li{
+      text-decoration: none;
+      list-style-type: none;
+      margin-left: 5px;
+    }
+    .footer .footer-sosmed img{
+      width: 30px;
+    }
+    .footer .media{
+      font-style: italic;
+      margin-top: 5%;
+      margin-bottom: 2%;
+    }
+    .footer .media h3{
+      font-weight: bolder;
+      text-shadow: #fff 1px 1px;
+
+    }
+    .footer .logo {
+        margin-top: 25px;
+    }
+    .footer .logo img{
+        width: 40px;
+    }
+    .footer .logo ul{
+      display: flex;
+      margin-left: -35px;
+    }
+    .footer .logo ul li{
+      text-decoration: none;
+      list-style-type: none;
+      margin-left: 5px;
+    }
+    @media screen and (max-width: 992px) {
+        .header .banner img {
+            height: 55vh;
+            object-fit: cover;
+        }
+        .header .banner p{
+        color: white;
+        font-size: 16px;
+        }
+        .content .title h3{
+            font-weight: bolder;
+        }
+        .content p{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 832px) {
+        .header .banner img {
+            height: 55vh;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .header .banner img {
+            height: 50vh;
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .header .banner img {
+            height: 45vh;
+        }
+        .header .banner p{
+        color: white;
+        font-size: 14px;
+        }
+        .content .title h3{
+            font-weight: bolder;
+        }
+        .content p{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .header .banner img {
+            width: 100%;
+            height: 40vh;
+            object-fit: revert;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .header .banner img {
+            width: 100%;
+            height: 38vh;
+            object-fit: inherit;
+        }
+        .header .banner p{
+        color: white;
+        font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 420px) {
+        .header .banner img {
+            width: 100%;
+            height: 30vh;
+        }
+        .header .banner .title h1{
+        color: #f1b406;
+        font-size: 20px;
+        }
+        .header .banner .tittle .garis p{
+            text-shadow: #80817e 1px 3px;
+        }
+        .header .banner p{
+        color: white;
+        font-size: 10px;
+        }
+        .content .title h3{
+            font-weight: bolder;
+        }
+        .content p{
+            font-size: 12px;
+        }
+    }
+</style>
 <body>
     <section class="navbar-atas justify-content-between">
-        <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
-            <div class="container ">
-              <a class="navbar-brand" href="#">
-                <img src="assets/img/5.png" alt="" width="30">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+        <nav class="navbar navbar-dark fixed-top">
+          <div class="container-fluid" style="justify-content: flex-end; padding-right: 30px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarToggleExternalContent" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end  bg-dark text-bg-dark" tabindex="-1" id="navbarToggleExternalContent" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header text-white">
+                <a class="navbar-brand" href="index.html">
+                 <div class="row justify-content-start">
+                  <div class="col-lg-2">
+                    <img src="assets/img/5.png" alt="" width="50"> 
+                   
+                  </div>
+                  <div class="col-lg-6 mt-2">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                    &nbsp; JAYA SETYA PLASTIK
+                    </p>
+                  </div>
+                 </div>
+                </a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/produk.html">Produk</a>
+                    <a class="nav-link" href="produk.html">Produk</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="alur.html">Alur Kerja</a>
+                    <a class="nav-link" href="media.html">Media</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="/tentangkami.html">Tentang Kami</a>
+                    <a class="nav-link active" href="tentangkami.html">
+                      Tentang Kami
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakkami.html">
+                      Kontak Kami
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-          </nav>
-    </section>
-    <section class="header">
-        <div class="container">
-            <img src="assets/img/5.png" alt="" width="100">
-        <h1>TENTANG KAMI</h1>
-        <p>Menjadi perusahaan yang handal dan terdepan dengan menjaga reputasi di pasar global</p>
+          </div>
+        </nav>
+      </section>
+    <section class="header position-relative">
+        <div class="banner">
+            <div class="title position-absolute">
+                <h1>Tentang Kami <br>
+                  ------------------- 
+                </h1>
+              <div class="paraf">
+                  <p>Menjadi perusahaan yang handal dan terdepan dengan menjaga reputasi di pasar global</p>
+              </div>
+          </div>
         </div>
     </section>
-    <section class="content">
-        <div class="container-fluid">
+    <section class="content mt-5 mb-5">
+        <div class="container">
             <div class="row" >
-                <div class="col-sm-7 col-md-12 col-lg-6" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                    <img src="assets/img/company.jfif" alt="">
+                <div class="col-sm-12 col-md-5 col-lg-4">
+                    <a href="assets/img/company/6.jpg">
+                    <img class="zoom" src="assets/img/company/6.jpg" alt="">
+                    </a>
                 </div>
-                <div class="col-sm-5  col-md-12 col-lg-6" data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500">
-                    <h1 class="title text-center">VISI & MISI</h1>
-                    <div class="visi text-center">
-                        <h3>VISI</h3>
+                <div class="col-sm-12  col-md-7 col-lg-8 p-4" >
+                    <div class="visi text-start">
+                        <h2><b>Visi</b></h2>
                         <p>Menjadi Perusahaan yang tumbuh, inovatif, dan ber-nilai</p>
                     </div>
-                    <div class="misi text-center">
-                        <h3>MISI</h3>
-                        <div class="container">
+                    <div class="misi text-start mt-2">
+                        <h2><b>Misi</b></h2>
                             <div class="row">
-                               <div class="col-sm-4 col-md-4 d-flex flex-row">
-                                <img src="assets/img/kamera.png" alt="">
+                               <div class="col-sm-4 col-md-4">
                                 <p>Meningkatkan kualitas SDM</p>
                                </div> 
-                               <div class="col-sm-4 col-md-4 d-flex flex-row">
-                                <img src="assets/img/kamera.png" alt="">
+                               <div class="col-sm-4 col-md-4">
                                 <p>Membangun jaringan yang sehat dan kuat</p>
                                </div> 
-                               <div class="col-sm-4 col-md-4 d-flex flex-row">
-                                <img src="assets/img/kamera.png" alt="">
+                               <div class="col-sm-4 col-md-4">
                                 <p>Membangun tata kelola / management yang efisien dan efektif</p>
                                </div> 
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="content-footer">
+    <section class="kebijakan">
         <div class="container text-center" data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
             <div class="title">
-                <h1>KEBIJAKAN MUTU</h1>
+                <h1><b>Kebijakan Mutu</b></h1>
                 <hr>
             <p>CV. Jaya Setya Plastik adalah perusahaan yang senantiasa meningkatkan kepuasan pelanggan dengan cara :</p>
             <ul>
@@ -110,19 +364,19 @@
             </div>
             <div class="title-img">
                 <div class="content">
-                    <img src="assets/img/slider1.jpg" alt="">
+                    <img src="assets/img/image/tentang-kami/slider/1.jpg" alt="">
                 </div>
                 <div class="content">
-                    <img src="assets/img/slider2.jpg" alt="">
+                    <img src="assets/img/image/tentang-kami/slider/2.jpg" alt="">
                 </div>
                 <div class="content">
-                    <img src="assets/img/slider3.jfif" alt="">
+                    <img src="assets/img/image/tentang-kami/slider/5.jpg" alt="">
                 </div>
                 <div class="content">
-                    <img src="assets/img/slider3.jfif" alt="">
+                    <img src="assets/img/image/tentang-kami/slider/4.jpg" alt="">
                 </div>
                 <div class="content">
-                    <img src="assets/img/slider3.jfif" alt="">
+                    <img src="assets/img/image/tentang-kami/slider/3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -130,9 +384,10 @@
     <section class="value" >
         <div class="container-fluid text-center"> 
             <div class="title" >
-                <h1>VALUE</h1>
+                <h1><b>Value</b></h1>
             </div>
-            <div class="row justify-content-evenly isi" >
+            <hr>
+            <div class="row justify-content-lg-evenly isi" >
                 <div class="col-7 col-sm-7 col-md-6 col-lg-2">
                     <h5>1. SAFETY</h5>
                     <ul>
@@ -169,51 +424,109 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="footer">
-        <div class="container text-center">
-            <p>2023 Copyright CV. Jaya Setya Plastik</p>
+        <div class="container text-center" style="padding-bottom: 30px;">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 text-start">
+                <div class="footer-title">
+                  <img src="assets/img/5.png" alt="">
+                  <h3>Jaya Setya Plastik <br>
+                  Toys Manufacturing</h3>
+                </div>
+                <div class="footer-address">
+                  JL Raya Demak-Kudus KM.19 Kec. Karanganyar Kab. Demak Jawa Tengah
+                </div>
+                <div class="logo">
+                    <ul>
+                      <li>
+                        <img src="assets/img/company/logo/SNI.png" alt="" >
+                      </li>
+                      <li>
+                        <img src="assets/img/company/logo/KAN.png" alt="">
+                      </li>
+                      <li>
+                        <img src="assets/img/company/logo/ISO.png" alt="">
+                      </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 text-start">
+               <div class="media">
+                <h3>Ikuti Sosial Media Kami</h3>
+                <p>Dapatkan informasi dari sosial media kami</p>
+                <div class="footer-sosmed">
+                  <ul class="sosmed">
+                   <li>
+                     <img src="assets/img/company/logo/instagram.png" alt="">
+                   </li>
+                   <li>
+                     <img src="assets/img/company/logo/facebook.png" alt="">
+                   </li>
+                   <li>
+                     <img src="assets/img/company/logo/youtube.png" alt="">
+                   </li>
+                  </ul>
+                 </div>
+               </div>
+              </div>
+            </div>
         </div>
     </section>
 </body>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"></script>
 <script src="assets/slick-1.8.1/slick/slick.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/magnify/js/jquery.magnify.js"></script>
+<script>
+    $(document).ready(function() {
+      $('.zoom').magnify();
+    });
+    </script>
 <script>
    $(document).ready(function(){
+    /* calling script */
     AOS.init();
-$('.title-img').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  arrows: 1,
+    $('.title-img').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 300,
   autoplay: true,
-  autoplayspeed: 2500,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
 });
-		
    })
 </script>
 </html>

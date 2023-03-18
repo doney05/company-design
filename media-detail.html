@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYA SETYA PLASTIK</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Slab&family=Ubuntu&display=swap');
+    * {
+      scroll-behavior: smooth;
+      font-family: 'Assistant', sans-serif;
+    }
+    .hero .banner {
+        position: relative;
+        background: rgb(0, 0, 0);
+        height: 50vh;
+    }
+    .hero .banner::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.4;
+        background: url("assets/img/company/3.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .hero .banner img{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        
+    }
+    .hero .banner .title{
+        display: flex;
+        justify-content: start;
+        text-align: left;
+    }
+    .hero .banner .title h1{
+        color: #f1b406;
+        text-shadow: #80817e 1px 3px;
+        top: 75%!important;
+        left: 2%;
+        font-weight: bold;
+    }
+    
+    .second-hero .btn-kembali a{
+        background-color: rgb(10, 126, 0);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
+    .second-hero .btn-kembali a:hover{
+        background-color: rgb(14, 167, 0);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
+    .second-hero .image{
+        display: flex;
+        justify-content: center;
+    }
+    .second-hero .image img{
+        width: 100%;
+    }
+    .second-hero h3{
+        color: rgb(59, 161, 0);
+        font-weight: bold;
+    }
+    .second-hero p{
+        font-weight: 400;
+        text-align: justify;
+    }
+    @media screen and (max-width: 992px) {
+        .hero .banner img {
+            height: 55vh;
+        }
+    }
+    @media screen and (max-width: 832px) {
+        .hero .banner img {
+            height: 55vh;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .hero .banner img {
+            height: 50vh;
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .hero .banner img {
+            height: 45vh;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .hero .banner img {
+            width: 100%;
+            height: 40vh;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .hero .banner img {
+            width: 100%;
+            height: 35vh;
+        }
+    }
+    @media screen and (max-width: 420px) {
+        .hero .banner img {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+</style>
+<body>
+  <section class="navbar-atas justify-content-between">
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid" style="justify-content: flex-end; padding-right: 30px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarToggleExternalContent" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end  bg-dark text-bg-dark" tabindex="-1" id="navbarToggleExternalContent" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header text-white">
+            <a class="navbar-brand" href="index.html">
+             <div class="row justify-content-start">
+              <div class="col-lg-2">
+                <img src="assets/img/5.png" alt="" width="50"> 
+               
+              </div>
+              <div class="col-lg-6 mt-2">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                &nbsp; JAYA SETYA PLASTIK
+                </p>
+              </div>
+             </div>
+            </a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="media.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentangkami.html">
+                  Tentang Kami
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakkami.html">
+                  Kontak Kami
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+      <section class="hero position-relative">
+        <div class="banner">
+            <div class="title">
+                <h1 class="position-absolute">
+                    Media Publikasi
+                    <br>
+                    -----------------
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="second-hero">
+        <div class="container">
+            <div class="image mt-5 mb-3">
+                <img src="assets/img/image/media/media2.jpg" alt=""  data-aos="zoom-in-up" style="width: 80%;">
+            </div>
+            <div class="title"  data-aos="zoom-in-up">
+                <h3 class="text-center">JSP Peduli</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur mollitia voluptate eius, laudantium eos voluptatem odit eligendi dolorem? Alias vitae illo doloribus sit inventore quia possimus placeat! Voluptates, at molestias?
+                    <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus libero amet sapiente maiores provident vero blanditiis inventore quisquam dolorum dolor. Ut, sint! Numquam inventore ab voluptatibus aspernatur saepe, suscipit cupiditate!
+                </p>
+            </div>
+            <div class="btn-kembali mt-3 mb-5">
+                <a href="media.html">Kembali</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  $(document).ready(function(){
+    AOS.init({
+        offset: 120,
+    });
+  })
+</script>
+</html>

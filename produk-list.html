@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. JAYA SETYA PLASTIK</title>
+    <title>JAYA SETYA PLASTIK</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;700;800&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Slab&family=Ubuntu&display=swap');
     * {
       scroll-behavior: smooth;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Assistant', sans-serif;
     }
-    .hero .title {
-        margin-top: 100px;
-        font-weight: bold;
-    }
-    .second-hero{
-        height: 100vh;
+     .hero .banner img{
+        width: 100%;
     }
     .second-hero a{
         text-decoration: none;
@@ -28,191 +25,278 @@
     .second-hero img{
         width: 100%;
     }
-    .second-hero h6 {
-        color: rgb(255, 255, 255);
-        background-color: #288f00;
-        padding-top: 13px;  
-        padding-bottom: 0.5px;
-        border-radius: 30px;
-        width: 80%;
-        margin-left: 10%;
+    .second-hero h2 {
+        font-weight: bold;
+    }
+    .second-hero ul li {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #5488ff;
+        width: 85%;
+    }
+    .second-hero form {
+        position: relative;
+        width: 90%;
+    }
+    .second-hero button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50px;
+        background: transparent;
+        border: transparent;
+        font-size: 20px;
+        color: #4b00ff;
+        cursor: pointer;
     }
     .second-hero .title p{
         font-weight: bold;
     }
     .second-hero .title h5 {
         margin-top: -18px;
-        font-weight: bold;
+        font-weight: bolder;
         font-size: 25px;
+    }
+    .second-hero .item-list .list-product .item{
+      padding-right: 5%;
+    }
+    .second-hero .card a {
+      text-decoration: none;
+    }
+    .second-hero .card {
+      border-radius: 15px;
+      background-color: rgb(24, 82, 148);
+      color: white;
+    }
+    .second-hero .card h5 {
+      font-weight: bold;
+      font-size: 1.3em;
     }
 </style>
 <body>
-    <section class="navbar-atas justify-content-between">
-        <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
-            <div class="container ">
-              <a class="navbar-brand" href="#">
-                <img src="assets/img/5.png" alt="" width="30">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/produk.html">Produk</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="alur.html">Alur Kerja</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/tentangkami.html">Tentang Kami</a>
-                  </li>
-                </ul>
+  <section class="navbar-atas justify-content-between">
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid" style="justify-content: flex-end; padding-right: 30px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarToggleExternalContent" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end  bg-dark text-bg-dark" tabindex="-1" id="navbarToggleExternalContent" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header text-white">
+            <a class="navbar-brand" href="index.html">
+             <div class="row justify-content-start">
+              <div class="col-lg-2">
+                <img src="assets/img/5.png" alt="" width="50"> 
+               
               </div>
-            </div>
-          </nav>
-    </section>
+              <div class="col-lg-6 mt-2">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                &nbsp; JAYA SETYA PLASTIK
+                </p>
+              </div>
+             </div>
+            </a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="media.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentangkami.html">
+                  Tentang Kami
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakkami.html">
+                  Kontak Kami
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
     <section class="hero">
-        <div class="container">
-            <div class="title">
-                <h1>Yogobata</h1>
-                <p>Produk / Karakter</p>
-                <hr>
-            </div>
+        <div class="banner">
+            <img src="assets/img/company/banner/Header1.png" alt="">
         </div>
     </section>
     <section class="second-hero">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-3 mb-3">
-                    <a href="#">
-                        <img src="assets/img/image-terbaru/2.png" alt="">
-                        <div class="btn-detail">
-                            <h6>Lihat Detail</p>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 mt-5 ">
+                    <div class="category">
+                        <h2 class="category-label mb-3">Produk Kategori</h2>
+                        <p><a href="index.html" style="color: #000;">Home </a> > Yogobata</p>
+                        <div class="row text-center" style="margin-left: 1%;">
+                          <div class="col-6 col-md-6 col-lg-3 mb-3 list-group">
+                            <a href="#">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Yogobata</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-3 mb-3 list-group">
+                            <a href="#">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ali Toys</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-3 mb-3 list-group">
+                            <a href="#">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Star Toys</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-3 mb-3 list-group">
+                            <a href="#">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">MD Toys</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-3 mb-3 list-group">
+                            <a href="#">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Yogobata</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-3 mb-3 list-group">
+                            <a href="#">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Yogobata</h5>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
                         </div>
-                        <div class="title">
-                            <p>ATM</p>
-                            <h5>ATM 651</h3>
-                        </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-3 mb-3">
-                    <a href="#">
-                        <img src="assets/img/image-terbaru/3.png" alt="">
-                        <div class="btn-detail">
-                            <h6>Lihat Detail</p>
+                <div class="col-md-12 col-lg-12 mt-5">
+                    <div class="item-list">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <h2>Produk Yogobata</h2>
+                          </div>
+                          <div class="col-md-6 col-lg-4 mt-3">
+                            <form action="#" class="form-inline ml-5">
+                              <input type="text" placeholder="Search..." name="search" class="form-control">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                          </div>
                         </div>
-                        <div class="title">
-                            <p>ATM</p>
-                            <h5>ATM 651</h3>
+                        <hr style="margin-bottom: 2em;">
+                        <div class="row list-product mb-3 text-center justify-content-start">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/2.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/3.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/4.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/2.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/3.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/4.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 item mb-5">
+                                <a href="produk-detail.html" data-aos="zoom-in-up">
+                                    <img src="assets/img/image-terbaru/3.png" alt="">
+                                    <div class="title">
+                                        <p>ATM</p>
+                                        <h5>ATM 651</h3>
+                                            <img src="assets/img/image/More.png" alt="" class="w-50">
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-3 mb-3">
-                    <a href="#">
-                        <img src="assets/img/image-terbaru/4.png" alt="">
-                        <div class="btn-detail">
-                            <h6>Lihat Detail</p>
-                        </div>
-                        <div class="title">
-                            <p>ATM</p>
-                            <h5>ATM 651</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3 mb-3">
-                    <a href="#">
-                        <img src="assets/img/image-terbaru/2.png" alt="">
-                        <div class="btn-detail">
-                            <h6>Lihat Detail</p>
-                        </div>
-                        <div class="title">
-                            <p>ATM</p>
-                            <h5>ATM 651</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3 mb-3">
-                    <a href="#">
-                        <img src="assets/img/image-terbaru/3.png" alt="">
-                        <div class="btn-detail">
-                            <h6>Lihat Detail</p>
-                        </div>
-                        <div class="title">
-                            <p>ATM</p>
-                            <h5>ATM 651</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3 mb-3">
-                    <a href="#">
-                        <img src="assets/img/image-terbaru/4.png" alt="">
-                        <div class="btn-detail">
-                            <h6>Lihat Detail</p>
-                        </div>
-                        <div class="title">
-                            <p>ATM</p>
-                            <h5>ATM 651</h3>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="footer">
-        <div class="container text-center">
-            <p>2023 Copyright CV. Jaya Setya Plastik</p>
-        </div>
-    </section> -->
 </body>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.js"></script>
-<script src="assets/slick-1.8.1/slick/slick.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-   $(document).ready(function(){
-    
-
-$('.slider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: 1
-});
-	
-$('.text-berjalan').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 1,
-  arrows: 1,
-  autoplay: true,
-  autoplayspeed: 2500,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-   })
+  $(document).ready(function(){
+    AOS.init({
+        offset: 120,
+    });
+  })
 </script>
 </html>
